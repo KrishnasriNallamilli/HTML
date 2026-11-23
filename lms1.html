@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="University Student Activity Management Portal for exploring and registering for campus events.">
+
+    <meta name="author" content="University Student Portal">
+
+    <title>Student Activity Management Portal</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Student Activity Management Portal</h1>
+        <p>Explore, Participate and Grow!</p>
+
+        <!-- Navigation -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Upcoming Events</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to Our University!</h2>
+            <p>
+                Welcome to the Student Activity Management Portal.
+                Discover exciting events, participate in activities
+                and connect with fellow students.
+            </p>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section id="events">
+            <h2>Upcoming Events</h2>
+
+            <article>
+                <h3>Technical Symposium</h3>
+                <p>Date: 25 November 2026</p>
+                <p>Explore technology, innovation and programming.</p>
+            </article>
+
+            <article>
+                <h3>Cultural Fest</h3>
+                <p>Date: 30 November 2026</p>
+                <p>Enjoy music, dance, drama and cultural performances.</p>
+            </article>
+
+            <article>
+                <h3>Sports Day</h3>
+                <p>Date: 5 December 2026</p>
+                <p>Participate in exciting indoor and outdoor games.</p>
+            </article>
+        </section>
+
+        <!-- University Activities -->
+        <section id="activities">
+            <h2>University Activities</h2>
+
+            <article>
+                <h3>Technical Club</h3>
+                <p>Participate in coding competitions and workshops.</p>
+            </article>
+
+            <article>
+                <h3>Arts and Cultural Club</h3>
+                <p>Showcase your creativity through music and arts.</p>
+            </article>
+
+            <article>
+                <h3>Sports Club</h3>
+                <p>Improve your fitness and teamwork skills.</p>
+            </article>
+        </section>
+
+        <!-- Aside -->
+        <aside>
+            <h2>Announcements</h2>
+            <p>Event registrations are now open!</p>
+            <p>Students are encouraged to participate in university activities.</p>
+        </aside>
+
+        <!-- Registration Form -->
+        <section id="register">
+            <h2>Student Event Registration</h2>
+
+            <form action="#" method="post">
+
+                <!-- Text Fields -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name"
+                        placeholder="Enter your full name" required>
+                    <br><br>
+
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email"
+                        placeholder="Enter your email" required>
+                    <br><br>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone"
+                        placeholder="Enter phone number"
+                        pattern="[0-9]{10}" required>
+                    <br><br>
+
+                    <label for="roll">Student Roll Number:</label><br>
+                    <input type="text" id="roll" name="roll"
+                        placeholder="Enter roll number" required>
+                    <br><br>
+                </fieldset>
+
+                <!-- Dropdown -->
+                <fieldset>
+                    <legend>Academic Details</legend>
+
+                    <label for="department">Department:</label><br>
+                    <select id="department" name="department" required>
+                        <option value="">Select Department</option>
+                        <option value="CSE">Computer Science</option>
+                        <option value="ECE">Electronics</option>
+                        <option value="EEE">Electrical</option>
+                        <option value="MECH">Mechanical</option>
+                        <option value="CIVIL">Civil</option>
+                    </select>
+                    <br><br>
+
+                    <label for="year">Year of Study:</label><br>
+                    <select id="year" name="year" required>
+                        <option value="">Select Year</option>
+                        <option value="1">First Year</option>
+                        <option value="2">Second Year</option>
+                        <option value="3">Third Year</option>
+                        <option value="4">Fourth Year</option>
+                    </select>
+                    <br><br>
+                </fieldset>
+
+                <!-- Radio Buttons -->
+                <fieldset>
+                    <legend>Gender</legend>
+
+                    <input type="radio" id="male"
+                        name="gender" value="Male" required>
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female"
+                        name="gender" value="Female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other"
+                        name="gender" value="Other">
+                    <label for="other">Other</label>
+                </fieldset>
+
+                <br>
+
+                <!-- Checkboxes -->
+                <fieldset>
+                    <legend>Select Events</legend>
+
+                    <input type="checkbox" id="technical"
+                        name="events" value="Technical Symposium">
+                    <label for="technical">Technical Symposium</label>
+                    <br>
+
+                    <input type="checkbox" id="cultural"
+                        name="events" value="Cultural Fest">
+                    <label for="cultural">Cultural Fest</label>
+                    <br>
+
+                    <input type="checkbox" id="sports"
+                        name="events" value="Sports Day">
+                    <label for="sports">Sports Day</label>
+                    <br>
+                </fieldset>
+
+                <br>
+
+                <!-- Textarea -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <label for="message">Why do you want to participate?</label>
+                    <br>
+
+                    <textarea id="message" name="message"
+                        rows="5" cols="40"
+                        placeholder="Enter your message here"></textarea>
+                </fieldset>
+
+                <br>
+
+                <input type="checkbox" id="agree"
+                    name="agree" required>
+                <label for="agree">
+                    I agree to the event registration terms and conditions.
+                </label>
+
+                <br><br>
+
+                <button type="submit">Register Now</button>
+                <button type="reset">Reset Form</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: studentportal@university.edu</p>
+        <p>Phone: 9876543210</p>
+        <p>&copy; 2026 University Student Activity Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
